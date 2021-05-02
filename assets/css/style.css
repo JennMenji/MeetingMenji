@@ -1,0 +1,17 @@
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+:root {
+    --primary-color: #36393d;
+    --secondary-color: #78868a;
+    --tertiary-color: #cea09a;
+    --primary-highlight: #e7e7e7;
+    --secondary-highlight: #495456;
+    --tertiary-highligh: #929292;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
