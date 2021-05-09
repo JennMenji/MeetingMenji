@@ -15,3 +15,7 @@ body {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
 }
+
+h2 {
+    color: var(--secondary-color);
+}
