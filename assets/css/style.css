@@ -65,7 +65,7 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-size: 1.55vw;
+    font-size: 1.85vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -76,35 +76,17 @@ header nav ul li a:hover {
 }
 /* header/nav start */
 
-/* footer start
+/* footer start */
 footer {
-    background: var(--primary-color);
+    background: var(--tertiary-color);
     width: 100%;
     padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 25px;
 
-footer h2 {
-    color: var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
 }
-
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: var(--secondary-color);
-}
-
-section {
-    padding: 60px;
-}
-footer end */
+/* footer end */
 
 /* hero start */
 .hero {
@@ -120,8 +102,8 @@ footer end */
 }
 
 .hero p {
-    width: 100%;
-    margin: 100px;
+    margin: 30px;
+    padding: 160px;
     font-size: 18px;
     color: var(--primary-highlight);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -133,6 +115,8 @@ footer end */
     font-size: 35px;
     color: var(--tertiary-color);
     text-align: center;
+    width: 100%;
+    padding: 15px;
 }
 /* section style end */
 
@@ -149,18 +133,37 @@ footer end */
 }
 
 .bio img{
-    max-width: 50%;
-
+    max-width: 45%;
+    padding: 35px;
+    flex: 0 25%;
 }
 
 .bio-text {
+    width: 50%;
+    padding: 35px 45px 35px 0;
     text-align: left;
-    flex-grow: 2;
-    flex-basis: 0;
+}
+
+.bio-text h3 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    padding: 15px 0 8px 0;
+}
+
+.bio-text h4 {
+    color: var(--tertiary-color);
+    font-size: 16px;
+    font-weight: light;
+    font-style: oblique;
+    padding: 0 0 8px 0;
+}
+
+.bio-text p {
+    color: var(--primary-highlight);
 }
 /* about me end */
 
-/* MEET THE TRAINERS START */
+/* applications start */
 .applications {
     width: 100%;
     margin: 0 auto;
@@ -175,6 +178,7 @@ footer end */
     width: 100%;
     text-align: center;
     color: var(--secondary-color);
+    flex: 0 25%;
 }
 
 .application p {
@@ -185,16 +189,22 @@ footer end */
     width: 100%;
     border-color: var(--secondary-highlight);
     border-width: 15px;
+
+}
+
+.first-app {
+    flex: 0 100%;
 }
 
 .first-app img{
-    width: 100%;
+    width: 50%;
 }
 
 /* MEET THE TRAINERS END */
 
-/* REACH OUT START */
+/* contact start */
 .contactinfo address{
+    padding: 20px;
     display: flex;
     justify-content: center;
 }
@@ -206,121 +216,107 @@ footer end */
     text-align: left;
 }
 
-
-
 .contactinfo span {
     color: var(--secondary-color);
 }
-
-
-
-.contact-info p, .contact-info address{
-    line-height: 1.5;
-    margin: 20px 0;
-    font-size: 16px;
-    font-style: normal;
-}
-
+/* contact end */
 
 /* work section start */
 .work {
     background: var(--primary-color);
 }
 
-/* MEDIA QUERIES FOR SMALLER DESKTOP SCREENS AND SMALLER 
+/* media queires for desktop screens and smaller */
 @media screen and (max-width: 980px) {
-    header {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-    }
-
-    header h1 {
-        width: 100%;
-        text-align: center;
-    }
-
-    header nav ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
-    }
-
     header nav ul li a {
-        font-size: 20px;
+        font-size: 2.5vw;
     }
 
-    footer h2, footer div {
-        text-align: center;
-        width: 100%;
+    .hero p {
+        padding: 0;
     }
 
-    .hero-cta, .hero-form {
-        width: 100%;
-    }
-
-    .hero-cta {
-        text-align: center;
-    }
-    
-    .section-title {
-        width: 80%;
-    }
-
-    .trainer {
-        flex: 0 70%;
-    }
-
-    .contact-info iframe {
-        flex: 1 100%;
-    }
-}
-
-/* MEDIA QUERY FOR TABLETS AND SMALLER 
-@media screen and (max-width: 768px) {
     section {
-        padding: 30px 15px;
-    }
-    
-    .step h3 {
-        flex: 1 100%;
-        text-align: center;
+        padding: 8px 50px;
     }
 
-    .step-info {
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
+    .bio img {
+        max-width: 50%;
+        padding: 35px;
+        flex: 0 25%;
     }
 
-    .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
+    .bio-text {
+        width: 50%;
+        padding: 0 35px 0 35px;
+        text-align: left;
     }
 
-    .step-text {
-        flex: 100%;
+    .application {
+        flex: 0 25%;
+    }
+
+    .first-app {
+        flex: 0 100%;
+    }
+
+    .first-app img {
+        width: 100%;
     }
 }
-*/
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+/* media query for tablets and smaller */
+@media screen and (max-width: 768px) {
+    header nav ul li a {
+        font-size: 3vw;
+    }
+
+    section {
+        padding: 10px 25px;
+    }
+ 
+    .bio img {
+        max-width: 100%;
+        padding: 35px;
+        flex: 0 25%;
+    }
+
+    .bio-text {
+        width: 100%;
+        padding: 0 35px 0 35px;
+        text-align: left;
+    }
+
+    .application {
+        flex: 0 50%;
+    }
+
+    .first-app {
+        flex: 0 100%;
+    }
+
+    .first-app img {
+        width: 100%;
+    }
+}
+
+/* media query for mobile phones and smaller */
 @media screen and (max-width: 575px) {
     header nav ul li a {
         font-size: 3.55vw;
     }
     
+    .hero p {
+        justify-content: right;
+    }
+
     section {
         padding: 30px 15px;
     }
     
-    .section-title {
-        width: 100%;
-    }
-
     .bio img {
         width: 100%;
+        flex: 1 100%;
     }
 
     .bio p {
@@ -339,4 +335,4 @@ footer end */
         width: 100%;
     }
 }
-/* MEDIA QUERIES END*/
+/* media query end */
