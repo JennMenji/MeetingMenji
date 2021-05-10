@@ -14,7 +14,7 @@ The Challenge for week one involves building a portfolio page from scratch, whic
 * When the page or view on the site on various screens and devices then the user is presented with a responsive layout that adapts to their viewport
 
 ### Final Website Screenshot
-![Website Screenshot](./assets/images/screenshot.png)
+![Website Screenshot](./assets/Images/screenshot.png)
 
 ### Website URL
 https://jennmenji.github.io/MeetingMenji/
